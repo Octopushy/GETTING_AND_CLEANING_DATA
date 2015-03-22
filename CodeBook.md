@@ -1,10 +1,5 @@
----
-title: "CodeBook.md"
-date: "Saturday, March 21, 2015"
-output:
-  html_document:
-    keep_md: yes
---- 
+# CodeBook.md
+Saturday, March 21, 2015  
 
 ## Project Description
 This assignment uses data from the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine Learning Repository</a>, a popular repository for machine learning
@@ -111,7 +106,7 @@ This dataset includes 1 column with the subject ID numbers (subjectID), 1 column
 
 The tidy dataset includes the average values of the mean and standard deviation measurements for each subject and activity; these variables are designated in the <a href="https://github.com/dixon9/GETTING_AND_CLEANING_DATA/blob/master/features.txt">features.txt</a> dataset by the raw measurement (feature) names described above and the suffixes: mean(), std(), and meanFreq().  
 
-For example, for the raw measurements tBodyAcc-XYZ, the raw variable names from <b>features.txt</b> are:  tBodyAcc-mean()-X, tBodyAcc-mean()-Y, and tBodyAcc-mean()-Z.  **run_analysis.R**  will change the raw variable names to the R-friendly names:  tBodyAcc.mean.X, tBodyAcc.mean.Y, and tBody.mean.Z.  For each subject and activity, there are multiple mean measurements.  The name of the variable for the computed average value appends a prefix "avg." to the measurement name:  avg.tBodyAcc.mean.X, avg.tBodyAcc.mean.Y, and avg.tBodyAcc.mean.Z. To continue the example, for subject #1 and the activity "LAYING", there are 95 measurements of t.BodyAcc.mean.X, tBodyAcc.mean.Y, and tBodyAcc.mean.Z.  **run_analysis.R** will generate new variables for the average of the 95 measurements:  avg.t.BodyAcc.mean.X, avg.t.BodyAcc.mean.Y, and avg.t.BodyAcc.mean.Z.  
+For example, for the raw measurements tBodyAcc-XYZ, the raw variable names from <b>features.txt</b> are:  tBodyAcc-mean()-X, tBodyAcc-mean()-Y, and tBodyAcc-mean()-Z.  **"run_analysis.R"**  will change the raw variable names to the R-friendly names:  tBodyAcc.mean.X, tBodyAcc.mean.Y, and tBody.mean.Z.  For each subject and activity, there are multiple mean measurements.  The name of the variable for the computed average value appends a prefix "avg." to the measurement name:  avg.tBodyAcc.mean.X, avg.tBodyAcc.mean.Y, and avg.tBodyAcc.mean.Z. To continue the example, for subject #1 and the activity "LAYING", there are 95 measurements of t.BodyAcc.mean.X, tBodyAcc.mean.Y, and tBodyAcc.mean.Z.  **"run_analysis.R"** will generate new variables for the average of the 95 measurements:  avg.t.BodyAcc.mean.X, avg.t.BodyAcc.mean.Y, and avg.t.BodyAcc.mean.Z.  
 
 
 ```
