@@ -104,12 +104,12 @@ The script **run_analysis.R** merges (concatenates) the training and the test se
 
 Additional detail can be found in the **README.md** document for this project.  
 
-. [link to the readme document that describes the code in greater detail]()
+. <a href="https://github.com/dixon9/GETTING_AND_CLEANING_DATA/blob/master/README.md">README.md</a>
 
 ### Description of the variables in tidy_data.txt
 This dataset includes 1 column with the subject ID numbers (subjectID), 1 column with the activity names (activity.label) and 79 columns with the average values of the mean and standard deviation measurements for each raw measurement (signal).  
 
-The tidy dataset includes the average values of the mean and standard deviation measurements for each subject and activity; these variables are designated in the **features.txt** dataset by the raw measurement (feature) names described above and the suffixes: mean(), std(), and meanFreq().  
+The tidy dataset includes the average values of the mean and standard deviation measurements for each subject and activity; these variables are designated in the <a href="https://github.com/dixon9/GETTING_AND_CLEANING_DATA/blob/master/features.txt">features.txt</a> dataset by the raw measurement (feature) names described above and the suffixes: mean(), std(), and meanFreq().  
 
 For example, for the raw measurements tBodyAcc-XYZ, the raw variable names from <b>features.txt</b> are:  tBodyAcc-mean()-X, tBodyAcc-mean()-Y, and tBodyAcc-mean()-Z.  **run_analysis.R**  will change the raw variable names to the R-friendly names:  tBodyAcc.mean.X, tBodyAcc.mean.Y, and tBody.mean.Z.  For each subject and activity, there are multiple mean measurements.  The name of the variable for the computed average value appends a prefix "avg." to the measurement name:  avg.tBodyAcc.mean.X, avg.tBodyAcc.mean.Y, and avg.tBodyAcc.mean.Z. To continue the example, for subject #1 and the activity "LAYING", there are 95 measurements of t.BodyAcc.mean.X, tBodyAcc.mean.Y, and tBodyAcc.mean.Z.  **run_analysis.R** will generate new variables for the average of the 95 measurements:  avg.t.BodyAcc.mean.X, avg.t.BodyAcc.mean.Y, and avg.t.BodyAcc.mean.Z.  
 
