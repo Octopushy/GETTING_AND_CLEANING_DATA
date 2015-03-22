@@ -1,6 +1,5 @@
 ---
 title: "README.md"
-author: "Katherine J. Hoggatt"
 date: "Saturday, March 21, 2015"
 output:
   html_document:

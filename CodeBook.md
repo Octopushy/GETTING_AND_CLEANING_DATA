@@ -1,6 +1,10 @@
-# CodeBook.md
-Katherine J. Hoggatt  
-Saturday, March 21, 2015  
+---
+title: "CodeBook.md"
+date: "Saturday, March 21, 2015"
+output:
+  html_document:
+    keep_md: yes
+--- 
 
 ## Project Description
 This assignment uses data from the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine Learning Repository</a>, a popular repository for machine learning
@@ -102,7 +106,7 @@ Additional detail can be found in the **README.md** document for this project.
 
 . [link to the readme document that describes the code in greater detail]()
 
-### Description of the variables in the tidy_data.txt file
+### Description of the variables in tidy_data.txt
 This dataset includes 1 column with the subject ID numbers (subjectID), 1 column with the activity names (activity.label) and 79 columns with the average values of the mean and standard deviation measurements for each raw measurement (signal).  
 
 The tidy dataset includes the average values of the mean and standard deviation measurements for each subject and activity; these variables are designated in the **features.txt** dataset by the raw measurement (feature) names described above and the suffixes: mean(), std(), and meanFreq().  
