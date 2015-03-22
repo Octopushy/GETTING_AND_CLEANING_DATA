@@ -87,7 +87,7 @@ mean.dataframe <-
         test3.keep %>%
         group_by(subjectID, activity) %>%
         summarise_each(funs(mean)) %>%
-        ungroup()
+        ungroup() 
 
 ## Step 3:  Use descriptive activity names to name the activities in the dataset
 mean.dataframe.activitylabel <- left_join(mean.dataframe, activity.labels, by="activity")
