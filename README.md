@@ -29,7 +29,15 @@ The script uses the following datasets:
 	<li><b>subject_train.txt</b> and <b>subject_test.txt</b>:  7352 x 1 matrix and 2947 x 1 matrix with the subject id number, a value from 1 to 30, for each observation in the raw data.</li>
 </ol>
 
-## Description of the R script
+## Creating the tidy dataset
+
+### Steps to create the tidy dataset
+
+1.  Download the project datasets (zip file)  <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">HAR Data and Documentation zip file</a> [62.6Mb]
+2.  Unzip all files into the R working directory
+3.  Source the file **run_analysis.R** (i.e., enter `source("run_analysis.R")` at the R command line)
+
+## Description of the R script "run_analysis.R"
 The script merges (concatenates) the training and the test sets to create one data set, extracts only the measurements on the mean and standard deviation for each primary measurement (signal), uses descriptive activity names to name the activities in the data set, appropriately labels the data set with descriptive variable names, and creates a second, independent tidy data set with the average of each variable for each activity and each subject.  The variables that are averaged for this tidy dataset include any mean, standard deviation, and mean frequency estimates derived from the raw measurements (signals); these variables are designated in the <b>features.txt</b> dataset by the variable name suffixes: mean(), std(), and meanFreq().  For example, for the raw measurements tBodyAcc-XYZ, the raw variable names from <b>features.txt</b> are:  tBodyAcc-mean()-X, tBodyAcc-mean()-Y, and tBodyAcc-mean()-Z.  The script will change the raw variable names to the R-friendly names:  tBodyAcc.mean.X, tBodyAcc.mean.Y, and tBody.mean.Z.  For each subject and activity, there are multiple mean measurements.  To continue the example, for subject #1 and the activity "LAYING", there are 95 measurements of t.BodyAcc.mean.X, tBodyAcc.mean.Y, and tBodyAcc.mean.Z.  The script will generate new variables for the average of the 95 measurements:  avg.t.BodyAcc.mean.X, avg.t.BodyAcc.mean.Y, and avg.t.BodyAcc.mean.Z.      
 
 ##  Return dataset
